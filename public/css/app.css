@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+.info_card_container .border_bottom,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header .dc_head {
+  background-color: #0282f9;
+}
+
+header .logo_wrapper {
+  width: 100%;
+}
+
+header .logo_wrapper img {
+  width: 100%;
+}
+
+header ul {
+  padding-top: 27.5px;
+}
+
+header ul a {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1c1c1c;
+  transition: all 0.25s linear;
+  padding-bottom: 33px;
+}
+
+header ul a:hover {
+  color: #0282f9;
+  border-bottom: 5px solid #0282f9;
+}
+
+header input {
+  text-align: end;
+  margin-top: 27.5px;
+  border: none;
+  border-bottom: 2px solid #0282f9;
+}
+
+header input::-moz-placeholder {
+  text-align: end;
+  font-family: FontAwesome;
+}
+
+header input:-ms-input-placeholder {
+  text-align: end;
+  font-family: FontAwesome;
+}
+
+header input::placeholder {
+  text-align: end;
+  font-family: FontAwesome;
+}
+
+header input:focus-visible {
+  outline: none;
+}
+
+#jumbotron {
+  height: 400px;
+}
+
+#jumbotron img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+main .blue_div {
+  height: 70px;
+  background-color: #0282f9;
+}
+
+main .blue_div .container-sm {
+  position: relative;
+}
+
+main .blue_div .container-sm .card_absolute {
+  position: absolute;
+  top: -240px;
+  left: 0px;
+}
+
+main .container_cards,
+main .container_single_card {
+  background-color: #1c1c1c;
+}
+
+main .container_cards .container-sm,
+main .container_single_card .container-sm {
+  position: relative;
+}
+
+main .container_cards .container-sm .tag_series,
+main .container_single_card .container-sm .tag_series {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  background-color: #0282f9;
+  padding: 10px 15px;
+  position: absolute;
+  top: -47px;
+  left: 0px;
+}
+
+main .container_cards .tag_load,
+main .container_single_card .tag_load {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  background-color: #0282f9;
+  padding: 10px 70px;
+  cursor: pointer;
+  transition: transform 0.25s ease-in-out;
+}
+
+main .container_cards .tag_load:hover,
+main .container_single_card .tag_load:hover {
+  transform: scale(1.05);
+}
+
+main .container_single_card {
+  background-color: white;
+}
+
+main .container_single_card .light_green {
+  color: #a5e65e;
+  font-weight: 500;
+}
+
+main .container_single_card .price_info {
+  background-color: #55ba59;
+  border-top: 1.5px solid green;
+  border-bottom: 1.5px solid green;
+}
+
+main .container_single_card .price_info .col-sm-8 {
+  border-right: 1.5px solid green;
+}
+
+main .container_single_card .description_card {
+  color: grey;
+}
+
+main p {
+  color: white;
+}
+
+main img {
+  width: 100%;
+}
+
+.info_card_container {
+  background-color: #f6f6f6;
+}
+
+.info_card_container h2,
+.info_card_container .border_bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.info_card_container .border_bottom {
+  padding: 10px 0;
+}
+
+.info_card_container .tag_back {
+  transition: transform 0.25s ease-in-out;
+}
+
+.info_card_container .tag_back a {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  padding: 10px 70px;
+  background-color: #0282f9;
+  cursor: pointer;
+}
+
+.info_card_container .tag_back:hover {
+  transform: scale(1.05);
+}
+
+.info_card_container .link_blue {
+  color: #0282f9;
+  font-weight: 500;
+}
+
+.container_bg_blue {
+  background-color: #0282f9;
+}
+
+.container_bg_blue .container_footer_images {
+  color: white;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.container_bg_blue .container_footer_images .wrapper_footer_images {
+  height: 50px;
+}
+
+.container_bg_blue .container_footer_images .wrapper_footer_images img {
+  height: 100%;
+}
+
+.container_bg_blue .container_footer_images .wrapper_footer_images .special_image {
+  height: 65%;
+}
+
+footer .jumbo_footer {
+  background-image: url("/images/footer-bg.jpg");
+  background-repeat: repeat-x;
+}
+
+footer .container_footer_list h3 {
+  color: white;
+}
+
+footer .container_footer_list a {
+  color: grey;
+}
+
+footer .container_footer_list a:hover {
+  color: white;
+}
+
+footer .container_logo_dc {
+  height: 482px;
+}
+
+footer .logo_dc_bg {
+  background-image: url("/images/dc-logo-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+footer .footer_socials {
+  background-color: #303030;
+}
+
+footer .footer_socials .sign_up_footer {
+  color: white;
+  padding: 10px;
+  border: 2px solid #0282f9;
+}
+
+footer .footer_socials .sign_up_footer:hover {
+  background-color: #0282f9;
+}
+
+footer .footer_socials .follow_footer {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0282f9;
+}
+
