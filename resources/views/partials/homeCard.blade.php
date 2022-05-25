@@ -2,6 +2,7 @@
 
 @section('main')
 <main>
+    ciaooooooooooooooooooooooo
     {{-- <div class="blue_div">
         <div class="container-sm">
             <div class="card_absolute">
