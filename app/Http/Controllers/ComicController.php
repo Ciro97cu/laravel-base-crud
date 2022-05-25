@@ -16,7 +16,7 @@ class ComicController extends Controller
     {
         $arrayComics = Comic::All();
         $navLink = config('navLink');
-        return view("partials.home", compact("arrayComics", "navLink"));
+        return view("partials.index", compact("arrayComics", "navLink"));
     }
 
     /**
@@ -48,9 +48,10 @@ class ComicController extends Controller
      */
     public function show($id)
     {
-        $item = Comic::findOrFail($id);
+        $arrayComics = Comic::All();
+        $comic = Comic::findOrFail($id);
         $navLink = config('navLink');
-        return view("partials.homeCard", compact("item", "navLink"));
+        return view("partials.show", compact("arrayComics", "comic", "navLink"));
     }
 
     /**

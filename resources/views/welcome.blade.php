@@ -18,8 +18,3 @@
     <script src="js/carousel.js"></script>
 </body>
 </html>
-{{-- @forelse ($arrayComics as $comic)
-    <h1>{{$comic->title}}</h1>
-@empty
-    Errore
-@endforelse --}}

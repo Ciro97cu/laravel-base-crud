@@ -1,4 +1,4 @@
-@extends('../index')
+@extends('../welcome')
 
 @section('main')
 <main>
@@ -9,7 +9,7 @@
                 @foreach ($arrayComics as $comic)
                 <div class="col-sm-2">
                     <div class="wrapper_img">
-                        <a href="{{ route('partials.homeCard', $item->id) }}">
+                        <a href="{{ route('partials.show', $comic->id) }}">
                             <img class="pt-5 pb-3" src="{{$comic['thumb']}}" alt="{{$comic['title']}}" />
                         </a>
                     </div>
