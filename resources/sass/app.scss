@@ -1,1 +1,253 @@
-//
+@import "_resets";
+@import "_variables";
+
+header {
+    .dc_head {
+        background-color: $background-color-blue;
+    }
+
+    .logo_wrapper {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    ul {
+        padding-top: 27.5px;
+
+        a {
+            font-size: 13px;
+            font-weight: 700;
+            color: $text-color-dark;
+            transition: all 0.25s linear;
+            padding-bottom: 33px;
+
+            &:hover {
+                color: $background-color-blue;
+                border-bottom: 5px solid $background-color-blue;
+            }
+        }
+    }
+
+    input {
+        text-align: end;
+        margin-top: 27.5px;
+        border: none;
+        border-bottom: 2px solid $background-color-blue;
+
+        &::placeholder {
+            text-align: end;
+            font-family: FontAwesome;
+        }
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+}
+
+#jumbotron {
+    height: 400px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+main {
+    .blue_div {
+        height: 70px;
+        background-color: $background-color-blue;
+
+        .container-sm {
+            position: relative;
+
+            .card_absolute {
+                position: absolute;
+                top: -240px;
+                left: 0px;
+            }
+        }
+
+    }
+
+    .container_cards {
+        background-color: $background-color-dark;
+
+        .container-sm {
+            position: relative;
+
+            .tag_series {
+                font-size: 16px;
+                color: $text-color-white;
+                font-weight: 600;
+                background-color: $background-color-blue;
+                padding: 10px 15px;
+                position: absolute;
+                top: -47px;
+                left: 0px;
+            }
+
+
+        }
+
+        .tag_load {
+            font-size: 16px;
+            color: $text-color-white;
+            font-weight: 600;
+            background-color: $background-color-blue;
+            padding: 10px 70px;
+            cursor: pointer;
+            transition: transform 0.25s ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+    }
+
+    .container_single_card {
+        background-color: white;
+        @extend .container_cards;
+
+        .light_green {
+            color: $text-color-light_green;
+            font-weight: 500;
+        }
+
+        .price_info {
+            background-color: $background-color-green;
+            border-top: 1.5px solid green;
+            border-bottom: 1.5px solid green;
+
+            .col-sm-8 {
+                border-right: 1.5px solid green;
+            }
+        }
+
+        .description_card {
+            color: $text-color-grey;
+        }
+    }
+
+    p {
+        color: $text-color-white;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.info_card_container {
+    background-color: $background-color-grey;
+
+    h2 {
+        border-bottom: 1px solid $text-color-grey2;
+    }
+
+    .border_bottom {
+        @extend h2;
+        padding: 10px 0;
+    }
+
+    .tag_back {
+        transition: transform 0.25s ease-in-out;
+
+        a {
+            font-size: 16px;
+            color: $text-color-white;
+            font-weight: 600;
+            padding: 10px 70px;
+            background-color: $background-color-blue;
+            cursor: pointer;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .link_blue {
+        color: $background-color-blue;
+        font-weight: 500;
+    }
+}
+
+.container_bg_blue {
+    background-color: $background-color-blue;
+
+    .container_footer_images {
+        color: $text-color-white;
+        column-gap: 10px;
+
+        .wrapper_footer_images {
+            height: 50px;
+
+            img {
+                height: 100%;
+            }
+
+            .special_image {
+                height: 65%;
+            }
+        }
+    }
+}
+
+footer {
+    .jumbo_footer {
+        background-image: url("/images/footer-bg.jpg");
+        background-repeat: repeat-x;
+    }
+
+    .container_footer_list {
+        h3 {
+            color: $text-color-white;
+        }
+
+        a {
+            color: $text-color-grey;
+
+            &:hover {
+                color: $text-color-white;
+            }
+        }
+    }
+
+    .container_logo_dc {
+        height: 482px;
+    }
+
+    .logo_dc_bg {
+        background-image: url("/images/dc-logo-bg.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .footer_socials {
+        background-color: $background-color-dark-grey;
+
+        .sign_up_footer {
+            color: $text-color-white;
+            padding: 10px;
+            border: 2px solid $background-color-blue;
+
+            &:hover {
+                background-color: $background-color-blue;
+            }
+        }
+
+        .follow_footer {
+            font-size: 20px;
+            font-weight: 600;
+            color: $background-color-blue;
+        }
+    }
+}
