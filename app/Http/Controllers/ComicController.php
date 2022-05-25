@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Comic;
 
 class ComicController extends Controller
 {
@@ -13,7 +14,9 @@ class ComicController extends Controller
      */
     public function index()
     {
-        //
+        $arrayComics = Comic::All();
+        $navLink = config('navLink');
+        return view("index", compact("arrayComics", "navLink"));
     }
 
     /**
