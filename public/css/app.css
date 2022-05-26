@@ -119,6 +119,17 @@ main .container_single_card .container-sm {
   position: relative;
 }
 
+main .container_cards .container-sm .edit_card,
+main .container_single_card .container-sm .edit_card {
+  background-color: #0282f9;
+  transition: transform 0.25s ease-in-out;
+}
+
+main .container_cards .container-sm .edit_card:hover,
+main .container_single_card .container-sm .edit_card:hover {
+  transform: scale(1.05);
+}
+
 main .container_cards .container-sm .tag_series,
 main .container_single_card .container-sm .tag_series {
   font-size: 16px;
@@ -145,6 +156,27 @@ main .container_single_card .tag_load {
 main .container_cards .tag_load:hover,
 main .container_single_card .tag_load:hover {
   transform: scale(1.05);
+}
+
+main .container_form {
+  background-color: #1c1c1c;
+}
+
+main .container_form > * {
+  max-width: 500px;
+}
+
+main .container_form input {
+  margin-bottom: 20px;
+}
+
+main .container_form textarea {
+  margin-bottom: 20px;
+}
+
+main .container_form label {
+  color: white;
+  padding: 0;
 }
 
 main .container_single_card {

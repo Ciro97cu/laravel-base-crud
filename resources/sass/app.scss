@@ -82,6 +82,15 @@ main {
         .container-sm {
             position: relative;
 
+            .edit_card {
+                background-color: $background-color-blue;
+                transition: transform 0.25s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+
             .tag_series {
                 font-size: 16px;
                 color: $text-color-white;
@@ -92,8 +101,6 @@ main {
                 top: -47px;
                 left: 0px;
             }
-
-
         }
 
         .tag_load {
@@ -110,6 +117,27 @@ main {
             }
         }
 
+    }
+
+    .container_form {
+        background-color: $background-color-dark;
+
+        &>* {
+            max-width: 500px;
+        }
+
+        & input {
+            margin-bottom: 20px;
+        }
+
+        & textarea {
+            margin-bottom: 20px;
+        }
+
+        label {
+            color: white;
+            padding: 0;
+        }
     }
 
     .container_single_card {
