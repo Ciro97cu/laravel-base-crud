@@ -13,4 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get("/", function () {
+    return redirect()->route("partials.index");
+});
+
 Route::resource('partials', "ComicController");
