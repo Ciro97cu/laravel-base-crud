@@ -26,7 +26,8 @@ class ComicController extends Controller
      */
     public function create()
     {
-        //
+        $navLink = config('navLink');
+        return view("partials.create", compact("navLink"));
     }
 
     /**
@@ -37,7 +38,12 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $newComic = new Comic();
+        $newComic->fill($data);
+        $newComic->save();
+        $comic = $newComic->id;
+        return redirect()->route("partials.index", compact("comic"));
     }
 
     /**
@@ -62,7 +68,9 @@ class ComicController extends Controller
      */
     public function edit($id)
     {
-        //
+        $navLink = config('navLink');
+        $comic = Comic::findOrFail($id);
+        return view("partials.edit", compact("comic", "navLink"));
     }
 
     /**
@@ -74,7 +82,11 @@ class ComicController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $comic = Comic::findOrFail($id);
+        $data = $request->all();
+        $comic->fill($data);
+        $comic->save();
+        return redirect()->route("partials.index", compact("comic"));
     }
 
     /**
