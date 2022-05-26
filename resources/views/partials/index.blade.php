@@ -8,17 +8,18 @@
             <div class="row">
                 @foreach ($arrayComics as $comic)
                 <div class="col-sm-2">
+                    <a href="{{ route('partials.edit', $comic->id) }}" class="edit_card mt-5 mb-2 p-1 text-white text-center d-block">EDIT</a>
                     <div class="wrapper_img">
                         <a href="{{ route('partials.show', $comic->id) }}">
-                            <img class="pt-5 pb-3" src="{{$comic['thumb']}}" alt="{{$comic['title']}}" />
+                            <img class="pb-3" src="{{$comic['thumb']}}" alt="{{$comic['title']}}" />
                         </a>
                     </div>
-                    <p>{{ $comic["series"] }}</p>
+                    <p>{{ $comic["title"] }}</p>
                 </div>
                 @endforeach
             </div>
             <div class="row mt-5 justify-content-center">
-                <div class="col-auto tag_load">LOAD MORE</div>
+                <a href="{{ route("partials.create") }}" class="col-auto tag_load">ADD COMIC</a>
             </div>
         </div>
     </div>
