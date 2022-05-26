@@ -85,7 +85,7 @@ class ComicController extends Controller
         $comic = Comic::findOrFail($id);
         $data = $request->all();
         $comic->fill($data);
-        $comic->save();
+        $comic->update();
         return redirect()->route("partials.index", compact("comic"));
     }
 
@@ -97,6 +97,8 @@ class ComicController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $comic = Comic::find($id);
+        $comic->delete();
+        return redirect()->route("partials.index");
     }
 }
