@@ -107,6 +107,7 @@ main .blue_div .container-sm .card_absolute {
   position: absolute;
   top: -240px;
   left: 0px;
+  width: 192px;
 }
 
 main .container_cards,

@@ -5,7 +5,7 @@
     <div class="blue_div">
         <div class="container-sm">
             <div class="card_absolute">
-                <img src="{{$comic['thumb']}}" alt="">
+                <img src="{{$comic['thumb']}}" class="w-100" alt="">
             </div>
         </div>
     </div>
